@@ -12,9 +12,9 @@
       </div>
       <div class="col-12">
         <div class="table-responsive">
-          <table class="table">
+          <table class="table table-hover">
             <thead>
-              <tr>
+              <tr class="table-active">
                 <th scope="col">Degree</th>
                 <th scope="col">Credits</th>
                 <th scope="col">Application Fees</th>
@@ -23,7 +23,7 @@
                 <th scope="col">Total Fees</th>
               </tr>
             </thead>
-            <tbody class="">
+            <tbody class="table-group-divider">
               <tr>
                 <th scope="row">xxx</th>
                 <td>xxx</td>
@@ -52,6 +52,8 @@
           </table>
         </div>
       </div>
+      <div class="col-12 d-flex justify-content-center"><a href="" class="btn btn-sm btn-outline-secondary rounded-pill px-5">Learn more</a></div>
+
     </div>
   </section>
 </template>

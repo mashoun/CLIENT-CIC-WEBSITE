@@ -13,15 +13,15 @@
                     <div class="workshops-swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <section class="d-flex flex-column p-3 bg-light rounded shadow-sm pop">
+                                <section class="d-flex flex-column p-3 bg-light-blue rounded shadow-sm pop">
                                     <div class="ratio ratio-16x9">
                                         <img src="https://picsum.photos/1080" alt="slide" class="object-fit-cover rounded">
                                     </div>
                                     <div class="my-3">
-                                        <h5 class="fs-5 text-primary">Workshop Name</h5>
+                                        <h5 class="fs-5 text-dark slab">Workshop Name</h5>
                                         <p class="m-0 fs-smaller text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In necessitatibus eum quaerat, ipsum quis quia.</p>
                                     </div>
-                                    <a href="" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Learn more</a>
+                                    <a href="" class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Learn more</a>
                                 
                                 </section>
                             </div>

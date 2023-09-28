@@ -4,8 +4,11 @@
     <div class="row justify-content-between g-3">
       <div class="col-12 col-lg-6 order-2 order-lg-1">
         <aside class="d-flex flex-column gap-3 pop">
-          <h1 class="m-0 fs-1 text-color">YOUR WORLD DELIVERED BY DISTANCE LEARNING</h1>
-          <p class="text-secondary m-0">
+          <div class="d-flex gap-2 align-items-center">
+            <!-- <img src="/logo.jpeg" alt="logo" width="100" class="object-fit-cover rounded-circle shadow-sm"> -->
+            <h1 class="m-0 fs-2 text-color"><i>YOUR WORLD DELIVERED BY DISTANCE LEARNING</i></h1>
+          </div>
+          <p class="text-dark m-0">
             CIC stands as the pioneering private and independent institution, as
             well as a specialized center for educational services, offering
             online learning programs in Lebanon and the Arab world. It commenced
@@ -14,7 +17,7 @@
             International Center for Educational Management Services.
           </p>
           <div class="d-flex gap-3">
-            <a href="" class="btn btn-primary px-5">Get Started</a>
+            <a href="" class="btn btn-outline-primary rounded-pill px-5">Get Started</a>
             <!-- <a href="" class="btn btn-outline-primary">Watch a video</a> -->
           </div>
         </aside>
@@ -57,6 +60,10 @@ export default {
             // dynamicBullets: true,
             clickable: true,
         },
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
     });
   },
 };

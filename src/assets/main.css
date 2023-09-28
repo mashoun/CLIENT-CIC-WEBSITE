@@ -5,7 +5,17 @@
 body {
   min-height: 100vh;
   background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  
+  /* background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%); */
   background-repeat: no-repeat;
+}
+
+.bg-grad-dark{
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+.bg-light-blue{
+  background-color: #cfe2ff;
 }
 
 footer {
@@ -14,6 +24,15 @@ footer {
   background-repeat: no-repeat;
 }
 
+
+.router-link-exact-active{
+  /* border: 2px solid gold; */
+  
+  border-bottom: 2px solid var(--bs-warning);
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+
+}
 /* FONT FAMILY */
 .pop {
   font-family: 'Poppins', sans-serif;
@@ -44,6 +63,7 @@ footer {
 nav > a , .no-decoration{
   color: inherit;
   text-decoration: none;
+  transition: .2s ease-in-out;
 }
 
 /* GRAD BACKGROUND */
@@ -52,6 +72,10 @@ nav > a , .no-decoration{
   background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
   /* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
   /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
+}
+
+.bg-pot{
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
 
 /* Table */
@@ -101,4 +125,9 @@ th {
 .bg-transparent{
   background-color: transparent !important;
 
+}
+
+.gold-border{
+  padding: .5rem;
+  border: 2px solid gold;
 }
