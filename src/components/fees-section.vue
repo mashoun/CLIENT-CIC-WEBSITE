@@ -24,30 +24,15 @@
               </tr>
             </thead>
             <tbody class="table-group-divider">
-              <tr>
-                <th scope="row">xxx</th>
-                <td>xxx</td>
-                <td>xxx</td>
-                <td>xxx</td>
-                <td>xxx</td>
-                <td>xxx</td>
+              <tr v-for="node in store.profile.fees" :key="node" >
+                <td scope="row">{{node.degree}}</td>
+                <td>{{node.credits}}</td>
+                <td>{{node.applicationFees}}</td>
+                <td>{{node.downPayment}}</td>
+                <td>{{node.p18Month}}</td>
+                <td>{{node.totalFees}}</td>
               </tr>
-              <tr>
-                <th scope="row">xxx</th>
-                <td>xxx</td>
-                <td>xxx</td>
-                <td>xxx</td>
-                <td>xxx</td>
-                <td>xxx</td>
-              </tr>
-              <tr>
-                <th scope="row">xxx</th>
-                <td>xxx</td>
-                <td>xxx</td>
-                <td>xxx</td>
-                <td>xxx</td>
-                <td>xxx</td>
-              </tr>
+              
             </tbody>
           </table>
         </div>
@@ -58,5 +43,12 @@
   </section>
 </template>
 <script>
-export default {};
+
+import { useStore } from "../stores/mainStore";
+export default {
+  setup() {
+        const store = useStore();
+        return { store };
+  },
+};
 </script>

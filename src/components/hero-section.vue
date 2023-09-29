@@ -17,7 +17,7 @@
             International Center for Educational Management Services.
           </p>
           <div class="d-flex gap-3">
-            <a href="" class="btn btn-outline-primary rounded-pill px-5">Get Started</a>
+            <a :href="store.profile.contact.getStartedUrl" class="btn btn-outline-primary rounded-pill px-5">Get Started</a>
             <!-- <a href="" class="btn btn-outline-primary">Watch a video</a> -->
           </div>
         </aside>
@@ -26,19 +26,9 @@
         <!-- Swiper -->
         <div class="swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide" v-for="node in store.profile.media" :key="node.id">
                 <div class="ratio ratio-16x9">
-                    <img src="https://picsum.photos/1080" alt="slide" class="object-fit-cover rounded">
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="ratio ratio-16x9">
-                    <img src="https://picsum.photos/1081" alt="slide" class="object-fit-cover rounded">
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="ratio ratio-16x9">
-                    <img src="https://picsum.photos/1082" alt="slide" class="object-fit-cover rounded">
+                    <img :src="node.thumbnail" :alt="node.id" class="object-fit-cover rounded skeleton">
                 </div>
             </div>
           </div>
@@ -50,7 +40,14 @@
   </section>
 </template>
 <script>
+
+
+import { useStore } from "../stores/mainStore";
 export default {
+  setup() {
+        const store = useStore();
+        return { store };
+  },
   mounted() {
     var swiper = new Swiper(".swiper", {
         spaceBetween: 10,

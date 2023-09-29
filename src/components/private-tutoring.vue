@@ -15,7 +15,7 @@
           <i class="bi bi-mortarboard-fill fs-1 text-warning"></i>
           <h1 class="slab fs-4 text-light">For Students</h1>
           <p class="pop text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, dolor alias voluptatem quisquam debitis assumenda.</p>
-          <a href="" class="btn btn-outline-light px-5">Apply now</a>
+          <a href="https://forms.gle/eErvVwcdDziBFo3y5" class="btn btn-outline-light px-5">Apply now</a>
         </section>
       </div>
       <div class="col-12 col-lg-6">
@@ -23,7 +23,7 @@
           <i class="bi bi-person-workspace fs-1 text-warning"></i>
           <h1 class="slab fs-4 text-light">For Teachers</h1>
           <p class="pop text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, dolor alias voluptatem quisquam debitis assumenda.</p>
-          <a href="" class="btn btn-outline-light px-5">Apply now</a>
+          <a href="https://forms.gle/Eea2vKdfLSfGsjWMA" class="btn btn-outline-light px-5">Apply now</a>
         </section>
       </div>
     </div>

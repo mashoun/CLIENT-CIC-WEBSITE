@@ -5,7 +5,7 @@
                 <div class="col-12 col-lg-6">
                     <section class="d-flex flex-column gap-3  text-light">
                         
-                        <img src="/logo.jpeg" alt="logo" width="100" height="100" class="object-fit-cover rounded-circle shadow-sm">
+                        <img src="/logo.jpeg" alt="logo" width="100" height="100" class="object-fit-cover rounded-circle shadow-sm skeleton">
                         <h1 class="slab fs-1">Admission</h1>
                         <p class="pop">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus aperiam, rem ullam, odio exercitationem commodi doloremque illo quod ducimus, placeat amet nesciunt eos enim dolorum temporibus perspiciatis blanditiis! Qui, consequatur.</p>
                         <div class="d-flex gap-2 slab">

@@ -44,19 +44,19 @@ footer {
 
 /* FONT SIZE */
 .fs-small {
-  font-size: small;
+  font-size: small !important;
 }
 
 .fs-smaller {
-  font-size: smaller;
+  font-size: smaller !important;
 }
 
 .fs-x-small {
-  font-size: x-small;
+  font-size: x-small !important;
 }
 
 .fs-xx-small {
-  font-size: xx-small;
+  font-size: xx-small !important;
 }
 
 /* LINKS */
@@ -78,9 +78,22 @@ nav > a , .no-decoration{
   background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
 
+.bg-glass {
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.2);
+  /* background: #3a6073; */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
 /* Table */
 th {
   text-wrap: nowrap !important;
+  background-color: #1a659e !important;
+  color: #ffb703 !important;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 
 
@@ -130,4 +143,31 @@ th {
 .gold-border{
   padding: .5rem;
   border: 2px solid gold;
+}
+
+
+.skeleton {
+
+  -webkit-animation: skeleton 0.5s linear infinite alternate both;
+  animation: skeleton 0.5s linear infinite alternate both;
+}
+
+@-webkit-keyframes skeleton {
+  0% {
+      background: #dee2e6a4;
+  }
+
+  100% {
+      background: #c1c7cd;
+  }
+}
+
+@keyframes skeleton {
+  0% {
+      background: #dee2e6a4;
+  }
+
+  100% {
+      background: #c1c7cd;
+  }
 }
