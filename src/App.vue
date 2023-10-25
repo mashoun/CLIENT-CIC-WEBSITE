@@ -9,6 +9,9 @@
   <footer id="contact" class="mt-5 py-4">
     <footer-section></footer-section>
   </footer>
+  <section class="position-fixed z-3 end-0 bottom-0 p-4">
+    <a :href="store.profile.contact.whatsapp"><img src="/wa-icon.png" alt="wa" width="60" class="object-fit-contain"></a>
+  </section>
 </template>
 <script>
 

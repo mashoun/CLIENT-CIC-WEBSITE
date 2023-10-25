@@ -5,8 +5,8 @@
         <aside>
           <h2 class="slab fs-2 text-color">Our Partners</h2>
           <p class="fs-small m-0 pop text-secondary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-            harum libero? Ea adipisci voluptate animi?
+            CIC's affiliations with academic institutions, companies, and private organizations create unparalleled global educational opportunities for students in both the United States and abroad, thereby forging pathways to trans-formative life experiences. These partnerships are characterized by mutual benefits, as they not only educate students in their home countries but also facilitate avenues for pursuing a U.S. degree. Moreover, they actively contribute to the process of globalization by fostering student, faculty, administrative, and cultural exchanges.
+          CIC's affiliations with academic institutions, companies, and private organizations create unparalleled global educational opportunities for students in both the United States and abroad, thereby forging pathways to trans-formative life experiences. These partnerships are characterized by mutual benefits, as they not only educate students in their home countries but also facilitate avenues for pursuing a U.S. degree. Moreover, they actively contribute to the process of globalization by fostering student, faculty, administrative, and cultural exchanges.
           </p>
         </aside>
       </div>

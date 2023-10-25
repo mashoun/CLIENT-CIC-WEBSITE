@@ -5,16 +5,16 @@
 body {
   min-height: 100vh;
   background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
-  
+
   /* background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%); */
   background-repeat: no-repeat;
 }
 
-.bg-grad-dark{
+.bg-grad-dark {
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 
-.bg-light-blue{
+.bg-light-blue {
   background-color: #cfe2ff;
 }
 
@@ -25,14 +25,15 @@ footer {
 }
 
 
-.router-link-exact-active{
+.router-link-exact-active {
   /* border: 2px solid gold; */
-  
+
   border-bottom: 2px solid var(--bs-warning);
   padding-bottom: 5px;
   letter-spacing: 1px;
 
 }
+
 /* FONT FAMILY */
 .pop {
   font-family: 'Poppins', sans-serif;
@@ -60,7 +61,8 @@ footer {
 }
 
 /* LINKS */
-nav > a , .no-decoration{
+nav>a,
+.no-decoration {
   color: inherit;
   text-decoration: none;
   transition: .2s ease-in-out;
@@ -74,7 +76,7 @@ nav > a , .no-decoration{
   /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
 }
 
-.bg-pot{
+.bg-pot {
   background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
 
@@ -135,12 +137,12 @@ th {
   letter-spacing: 1px;
 }
 
-.bg-transparent{
+.bg-transparent {
   background-color: transparent !important;
 
 }
 
-.gold-border{
+.gold-border {
   padding: .5rem;
   border: 2px solid gold;
 }
@@ -154,20 +156,78 @@ th {
 
 @-webkit-keyframes skeleton {
   0% {
-      background: #dee2e6a4;
+    background: #dee2e6a4;
   }
 
   100% {
-      background: #c1c7cd;
+    background: #c1c7cd;
   }
 }
 
 @keyframes skeleton {
   0% {
-      background: #dee2e6a4;
+    background: #dee2e6a4;
   }
 
   100% {
-      background: #c1c7cd;
+    background: #c1c7cd;
   }
 }
+
+
+.text-fade {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  position: relative;
+}
+
+
+.text-fade-2 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  position: relative;
+}
+
+
+.text-fade-3 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  position: relative;
+}
+
+
+.text-fade-4 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  position: relative;
+}
+
+
+.text-fade-5 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  position: relative;
+}
+
+
+.text-fade-6 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  position: relative;
+}
+
+/* .swiper-pagination{
+  position: static !important;
+} */

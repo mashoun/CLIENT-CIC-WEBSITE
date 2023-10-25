@@ -1,6 +1,6 @@
 <template>
   <!--    hero section     -->
-  <section class="container"  style="overflow-x: hidden !important;">
+  <section class="container" >
     <div class="row justify-content-between g-3">
       <div class="col-12 col-lg-6 order-2 order-lg-1">
         <aside class="d-flex flex-column gap-3 pop">
@@ -17,51 +17,85 @@
             International Center for Educational Management Services.
           </p>
           <div class="d-flex gap-3">
-            <a :href="store.profile.contact.getStartedUrl" class="btn btn-outline-primary rounded-pill px-5">Get Started</a>
+            <a :href="store.profile.contact.getStartedUrl" class="btn btn-outline-primary rounded-pill px-5">Apply now</a>
             <!-- <a href="" class="btn btn-outline-primary">Watch a video</a> -->
           </div>
         </aside>
       </div>
-      <div class="col-12 col-lg-5 order-1 order-lg-2">
-        <!-- Swiper -->
-        <div class="swiper">
+      <div class="col-12 col-lg-5 order-1 order-lg-2" style="overflow-x: hidden !important;">
+
+        <!-- <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide" v-for="node in store.profile.media" :key="node.id">
-                <div class="ratio ratio-16x9">
-                    <img :src="node.thumbnail" :alt="node.id" class="object-fit-cover rounded skeleton">
-                </div>
+              <div class="ratio ratio-16x9">
+                <img :src="node.thumbnail" :alt="node.id" class="object-fit-cover rounded skeleton">
+              </div>
             </div>
           </div>
-          <!-- Add Pagination -->
           <div class="swiper-pagination my-3" style="position:static;"></div>
-        </div>
+        </div> -->
+
+        <swiper-container id="hero-swiper" init="false" class="">
+          <swiper-slide v-for="node in store.profile.media" :key="node.id" class="p-2">
+            <div class="ratio ratio-16x9">
+              <img :src="node.thumbnail" :alt="node.id" class="object-fit-cover rounded skeleton">
+            </div>
+          </swiper-slide>
+          <!-- <div class="swiper-pagination position-static my-3"></div> -->
+
+        </swiper-container>
+
+
       </div>
     </div>
   </section>
 </template>
 <script>
-
-
 import { useStore } from "../stores/mainStore";
 export default {
   setup() {
-        const store = useStore();
-        return { store };
+    const store = useStore();
+    return { store };
   },
   mounted() {
-    var swiper = new Swiper(".swiper", {
-        spaceBetween: 10,
-        grabCursor: true,
-        pagination: {
-            el: ".swiper-pagination",
-            // dynamicBullets: true,
-            clickable: true,
-        },
-        autoplay: {
+    // var swiper = new Swiper('.hero-swiper', {
+    //   spaceBetween: 20,
+    //   grabCursor: true,
+    //   pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    //   },
+    //   autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    //   },
+    //   effect:"cards"
+    // });
+    const swiperEl = document.querySelector('#hero-swiper');
+
+    // swiper parameters
+    const swiperParams = {
+
+      autoplay: {
         delay: 2500,
         disableOnInteraction: false,
       },
-    });
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   clickable: true,
+      // },
+      loop:true,
+      // effect:"cards",
+      spaceBetween:"10",
+      grabCursor: true,
+    };
+
+    // now we need to assign all parameters to Swiper element
+    Object.assign(swiperEl, swiperParams);
+
+    // and now initialize it
+    swiperEl.initialize();
+    // swiperEl.setAttribute('navigation','true')
   },
 };
 </script>

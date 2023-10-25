@@ -6,12 +6,19 @@
         </section>
         <nav class="d-none d-lg-flex slab align-items-center gap-3 text-light">
             <router-link to="/">Home</router-link>
+            <span role="button" data-bs-toggle="dropdown">About</span>
+            <ul class="dropdown-menu">
+                <li class="dropdown-item"><router-link class="no-decoration" to="/mission">Mission & Objectives</router-link></li>
+                <li class="dropdown-item"><router-link class="no-decoration" to="/team">Administrative Staff</router-link></li>
+                <li class="dropdown-item"><router-link class="no-decoration" to="/partners">Our Partners</router-link></li>
+            </ul>
             <router-link to="/programs">Programs</router-link>
             <router-link to="/admission">Admission</router-link>
             <router-link to="/fees">Fees</router-link>
             <router-link to="/workshops">Workshops</router-link>
             <router-link to="/private-tutoring">Private Tutoring</router-link>
-            <a href="https://drive.google.com/drive/folders/1Ve_mNpDX-a6-lazGCCh6pJLIobNR7IV6?usp=sharing">Events</a>
+            <router-link to="/events">Events</router-link>
+            <!-- <a href="https://drive.google.com/drive/folders/1Ve_mNpDX-a6-lazGCCh6pJLIobNR7IV6?usp=sharing">Events</a> -->
             <button class="btn btn-sm btn-warning rounded-pill px-3" data-bs-toggle="dropdown">Contact</button>
             <ul class="dropdown-menu">
                 <li>
@@ -38,12 +45,16 @@
         <i data-bs-toggle="dropdown" class="d-block d-lg-none bi bi-three-dots-vertical fs-3 text-light"></i>
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="/">Home</a></li>
+            <li><a class="dropdown-item" href="/mission">Mission & Objectives</a></li>
+            <li><a class="dropdown-item" href="/team">Administrative Staff</a></li>
+            <li><a class="dropdown-item" href="/partners">Our Partners</a></li>
             <li><a class="dropdown-item" href="/programs">Programs</a></li>
             <li><a class="dropdown-item" href="/admission">Admission</a></li>
             <li><a class="dropdown-item" href="/fees">Fees</a></li>
             <li><a class="dropdown-item" href="/workshops">Workshop</a></li>
             <li><a class="dropdown-item" href="/private-tutoring">Private Tutoring</a></li>
-            <li><a class="dropdown-item" href="https://drive.google.com/drive/folders/1Ve_mNpDX-a6-lazGCCh6pJLIobNR7IV6?usp=sharing">Events</a></li>
+            <li><a class="dropdown-item" href="/events">Events</a></li>
+            <!-- <li><a class="dropdown-item" href="https://drive.google.com/drive/folders/1Ve_mNpDX-a6-lazGCCh6pJLIobNR7IV6?usp=sharing">Events</a></li> -->
         </ul>
 
     </header>

@@ -3,7 +3,7 @@ import { defineStore } from "pinia";
 export const useStore = defineStore('store', {
     state: () => ({
 
-        profile:{
+        profile: {
             "contact": {
                 "email": "info@cic-edu.com",
                 "number": "123",
@@ -16,10 +16,22 @@ export const useStore = defineStore('store', {
             },
             "media": [
                 {
-                    "id": "",
+                    "id": "0",
                     "date": "",
                     "thumbnail": "",
-                    "index": ""
+                    "index": "0"
+                },
+                {
+                    "id": "1",
+                    "date": "",
+                    "thumbnail": "",
+                    "index": "1"
+                },
+                {
+                    "id": "2",
+                    "date": "",
+                    "thumbnail": "",
+                    "index": "2"
                 },
             ],
             "partners": [
@@ -38,7 +50,8 @@ export const useStore = defineStore('store', {
                     "title": "",
                     "description": "",
                     "link": "",
-                    "index": ""
+                    "index": "",
+                    "schedule":""
                 },
             ],
             "certifications": [],
@@ -50,7 +63,8 @@ export const useStore = defineStore('store', {
                     "title": "",
                     "description": "",
                     "link": "",
-                    "index": ""
+                    "index": "",
+                    "tag":""
                 },
             ],
             "fees": [
@@ -65,17 +79,52 @@ export const useStore = defineStore('store', {
                     "totalFees": "",
                     "index": ""
                 },
+            ],
+            "events":[
+                {
+                    "id":"",
+                    "index":"",
+                    "embed":"",
+                    "title":"",
+                    "description":""
+                }
+            ],
+            "team":[
+                {
+                    "id":"",
+                    "index":"",
+                    "thumbnail":"",
+                    "name":"",
+                    "position":"",
+                    "description":""
+                }
             ]
         },
 
-        
+
 
     }),
     actions: {
 
         getApi() {
-            return 'https://script.google.com/macros/s/AKfycbw3gxXz6BBLmAGsdMVB9IhlUpg1Me1H2i3f-H1cpiZUwPbTZsJmQWf1CbfYcXHt5k0F/exec'
+            return 'https://script.google.com/macros/s/AKfycbxbOzzAnbCz6Zv28LRmDOlF2TR-Dttcm7orVMKjovY0E4As0JsTh3Zt4w1qTzrIwVRB/exec'
         },
+        extractCanvaID(canvaEmbedLink) {
+            // Define a regular expression to match the Canva ID
+            const regex = /\/design\/(\w+)\//;
+
+            // Use the regular expression to extract the ID
+            const match = canvaEmbedLink.match(regex);
+
+            if (match) {
+                return match[1];
+            } else {
+                // Return null if no match is found
+                return null;
+            }
+        }      
+          
+          
 
     }
 })

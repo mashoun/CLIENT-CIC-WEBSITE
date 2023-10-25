@@ -115,7 +115,7 @@
                 <a :href="'https://wa.me/'+store.profile.contact.number"><i class="bi bi-whatsapp"></i></a>
                 <a :href="store.profile.contact.facebook"><i class="bi bi-facebook"></i></a>
                 <a :href="store.profile.contact.address"><i class="bi bi-geo-alt-fill"></i></a>
-                <a :href="store.profile.contact.linkedin"><i class="bi bi-linkedin"></i></a>
+                <!-- <a :href="store.profile.contact.linkedin"><i class="bi bi-linkedin"></i></a> -->
             </nav>
 
         </div>
