@@ -46,7 +46,7 @@
             <aside class="fc-100 d-flex flex-column gap-1 pt-5">
                 <div class="sans">
                     <h5 class="fs-5 text-warning slab ls-1">Private Tutoring</h5>
-                    <p class="text-secondary fs-smaller mono text-fade2 text-light opacity-50">Discover the heart of our community through our diverse range of programs.</p>
+                    <p class="text-secondary fs-smaller mono text-fade2 text-light opacity-50">Join CIC&#39;s tutoring program and embark on a trans-formative learning journey.</p>
                 </div>
                 <nav class="d-flex flex-column  text-light">
                     <a href="https://forms.gle/eErvVwcdDziBFo3y5" class="d-flex align-items-center gap-2">
@@ -77,7 +77,8 @@
             <aside class="fc-100 d-flex flex-column gap-1 pt-5">
                 <div class="sans">
                     <h5 class="fs-5 text-warning slab ls-1">Contact us</h5>
-                    <p class="mono text-secondary fs-smaller text-fade2 text-light opacity-50">Navigate the tech landscape seamlessly with our curated list of useful links.</p>
+                    <p class="mono text-secondary fs-smaller text-fade2 text-light opacity-50">Reach out to us today; we&#39;re here to
+assist you every step of the way.</p>
                 </div>
                 <nav class="d-flex flex-column text-light gap-2">
                     <!-- <a v-for="link in store.profile.links" :key="link" :href="link.url" class="d-flex align-items-center gap-2">
@@ -86,7 +87,7 @@
                     </a> -->
                     <span class="d-flex align-items-center gap-2">
                         <span class="material-symbols-outlined text-warning" style="font-size: 1.2rem !important;">location_on</span>
-                        <span class="opacity-75">Beirut, Verdun Center third floor</span>
+                        <span class="opacity-75">Beirut, Verdun Rome street Monti Marina Center Block C 3rd Floor Office 2</span>
                     </span>
                     
                     <a :href="'mailto:'+store.profile.contact.email" class="d-flex align-items-center gap-2">
@@ -95,7 +96,12 @@
                     </a>
                     <span class="d-flex align-items-center gap-2">
                         <span class="material-symbols-outlined text-warning" style="font-size: 1.2rem !important;">call</span>
-                        <span class="opacity-75">00 {{store.profile.contact.number}}</span>
+                        <span class="opacity-75">{{store.profile.contact.number}}</span>
+                    </span>
+
+                    <span class="d-flex align-items-center gap-2">
+                        <span class="material-symbols-outlined text-warning" style="font-size: 1.2rem !important;">call</span>
+                        <span class="opacity-75">{{store.profile.contact.ardeNumber}}</span>
                     </span>
                     
                 </nav>

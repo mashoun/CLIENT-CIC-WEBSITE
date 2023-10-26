@@ -5,14 +5,16 @@ export const useStore = defineStore('store', {
 
         profile: {
             "contact": {
-                "email": "info@cic-edu.com",
-                "number": "123",
-                "address": "http://map.cic-edu.org",
-                "facebook": "http://fb.cic-edu.org",
-                "instagram": "http://ig.cic-edu.org",
-                "tiktok": "http://tiktok.cic-edu.org",
-                "linkedin": "http://in.cic-edu.org",
-                "getStartedUrl": "http://apply.cic-edu.org"
+                "email": "",
+                "number": "",
+                "address": "",
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "linkedin": "",
+                "getStartedUrl": "",
+                "whatsapp":"",
+                "ardeNumber":""
             },
             "media": [
                 {
@@ -107,7 +109,7 @@ export const useStore = defineStore('store', {
     actions: {
 
         getApi() {
-            return 'https://script.google.com/macros/s/AKfycbxbOzzAnbCz6Zv28LRmDOlF2TR-Dttcm7orVMKjovY0E4As0JsTh3Zt4w1qTzrIwVRB/exec'
+            return 'https://script.google.com/macros/s/AKfycbyeOFcv0fMS8PUci7cGCypVTIHJpa_RZay9JbDG9eEV_bxaz4yOIg3P7sJdY4X8KFsI/exec'
         },
         extractCanvaID(canvaEmbedLink) {
             // Define a regular expression to match the Canva ID

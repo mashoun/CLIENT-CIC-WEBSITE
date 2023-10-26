@@ -24,7 +24,7 @@
                 <li>
                     <a :href="store.profile.contact.address" class="d-flex align-items-center gap-2 dropdown-item">
                         <span class="material-symbols-outlined text-warning" style="font-size: 1.2rem !important;">location_on</span>
-                        <span class="opacity-75">Beirut - Lebanon , Verdun Center third floor</span>
+                        <span class="opacity-75">Beirut, Lebanon Verdun Rome street Monti Marina Center Block C 3rd Floor Office 2</span>
                     </a>
                 </li>
                     

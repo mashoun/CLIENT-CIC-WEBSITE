@@ -35,7 +35,7 @@
           <div class="swiper-pagination my-3" style="position:static;"></div>
         </div> -->
 
-        <swiper-container id="hero-swiper" init="false" class="">
+        <swiper-container id="hero-swiper" init="false" navigation="true">
           <swiper-slide v-for="node in store.profile.media" :key="node.id" class="p-2">
             <div class="ratio ratio-16x9">
               <img :src="node.thumbnail" :alt="node.id" class="object-fit-cover rounded skeleton">
